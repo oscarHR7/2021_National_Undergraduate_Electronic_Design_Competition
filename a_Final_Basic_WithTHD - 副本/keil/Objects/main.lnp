@@ -1,0 +1,12 @@
+--cpu=Cortex-M4.fp.sp
+".\objects\main.o"
+".\objects\system_msp432e401y.o"
+".\objects\startup_msp432e401y_uvision.o"
+".\objects\uartstdio.o"
+"..\..\..\..\..\..\source\ti\devices\msp432e4\driverlib\lib\keil\m4f\msp432e4_driverlib.a"
+"..\..\..\..\..\..\source\third_party\CMSIS\DSP_Lib\lib\keil\m4f\arm_cortexM4lf_math.a"
+".\objects\oled.o"
+--strict --scatter ".\Objects\main.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\main.map" -o .\Objects\main.axf
